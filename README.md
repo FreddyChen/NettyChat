@@ -12,6 +12,8 @@
 注：由于jcenter账号一直申请不了，所以目前可以先通过下载源码方式进行依赖，后续会发布到jcenter上，以gradle方式进行依赖。
 
 ## 项目博客地址：
+[掘金](https://juejin.im/post/5c97ae12e51d45580b681b0b)
+[简书](https://www.jianshu.com/p/00ba0ac2fc96)
 
 
 # License
