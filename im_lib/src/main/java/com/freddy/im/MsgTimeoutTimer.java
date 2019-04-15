@@ -63,10 +63,9 @@ public class MsgTimeoutTimer extends Timer {
                 } finally {
                     // 从消息发送超时管理器移除该消息
                     imsClient.getMsgTimeoutTimerManager().remove(msg.getHead().getMsgId());
-                    // 当前重发次数等于可重发次数时，认为连接已断开或不稳定，触发重连
-                    if (currentResendCount == imsClient.getResendCount()) {
-                        imsClient.resetConnect();
-                    }
+                    // 执行到这里，认为连接已断开或不稳定，触发重连
+                    imsClient.resetConnect();
+                    currentResendCount = 0;
                 }
             } else {
                 // 发送消息，但不再加入超时管理器，达到最大发送失败次数就算了
