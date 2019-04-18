@@ -16,6 +16,9 @@
 [简书](https://www.jianshu.com/p/00ba0ac2fc96)
 [CSDN](https://blog.csdn.net/FreddyChen/article/details/89201785)
 
+## 使用过程中，如果有任何疑问，请联系我。
+## 如果该项目对你有用，麻烦star一下哈。。。
+QQ：408638443  Wechat：csclovelove
 
 # License
 
