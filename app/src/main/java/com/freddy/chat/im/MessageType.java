@@ -55,8 +55,19 @@ public enum MessageType {
 
     public enum MessageContentType {
 
+        /**
+         * 文本消息
+         */
         TEXT(101),
+
+        /**
+         * 图片消息
+         */
         IMAGE(102),
+
+        /**
+         * 语音消息
+         */
         VOICE(103);
 
         private int msgContentType;

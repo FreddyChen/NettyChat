@@ -146,14 +146,15 @@ class ServerHandler extends ChannelInboundHandlerAdapter {
                 }
 
                 message = message.toBuilder().setHead(message.getHead().toBuilder().setExtend(resp.toString()).build()).build();
-                ctx.channel().writeAndFlush(message);
+                ChannelContainer.getInstance().getActiveChannelByUserId(fromId).getChannel().writeAndFlush(message);
                 break;
             }
 
             // 心跳消息
             case 1002: {
                 // 收到心跳消息，原样返回
-                ctx.channel().writeAndFlush(message);
+                String fromId = message.getHead().getFromId();
+                ChannelContainer.getInstance().getActiveChannelByUserId(fromId).getChannel().writeAndFlush(message);
                 break;
             }
 

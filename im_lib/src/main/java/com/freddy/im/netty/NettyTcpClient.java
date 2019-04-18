@@ -70,7 +70,7 @@ public class NettyTcpClient implements IMSClientInterface {
     private String currentHost = null;// 当前连接host
     private int currentPort = -1;// 当前连接port
 
-    private MsgTimeoutTimerManager msgTimeoutTimerManager;
+    private MsgTimeoutTimerManager msgTimeoutTimerManager;// 消息发送超时定时器管理
 
     private NettyTcpClient() {
     }
