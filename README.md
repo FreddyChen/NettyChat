@@ -18,7 +18,23 @@
 
 ## 使用过程中，如果有任何疑问，请联系我。
 ## 如果该项目对你有用，麻烦star一下哈。。。
-QQ：408638443  Wechat：csclovelove
+## QQ交流群：1015178804，目前是Android IM技术交流群，后续写的文章，也会用此群进行交流。
+## 目前准备写的文章如下：
+```
+1.《开源一个自用的Android IM库，基于Netty+TCP+Protobuf实现》
+2.《开源一个自用的Android IM库，基于Netty+WebSocket+Protobuf实现》
+3.《开源一个自用的Android IM库，基于Netty+UDP+Protobuf实现》
+4.《开源一个自用的Android网络请求库，基于Rxjava+Retrofit实现》
+5.《开源一个自用的Android线程池，基于ThreadPoolExecutor实现》
+6.《开源一个自用的Android IM UI界面，包含文本、图片、语音、表情、红包等实现》
+7.《开源一个自用的Android图片加载库，基于Glide实现》
+8.《开源一个自用的Android视频压缩库，基于MediaCodec实现》
+9.《开源一个自用的Android视频压缩库，基于ffmpeg实现》
+10.《开源一个自用的Android事件分发中心库，基于对象池实现》
+```
+以上文章没有先后顺序，想到哪就写到哪吧。
+
+# 再次感谢鸿洋大神的推荐，虽然文章太长，无法投稿公众号，但这两天star量还是增加了不少，非常感谢鸿洋大神在wanandroid上的推荐。
 
 # License
 
