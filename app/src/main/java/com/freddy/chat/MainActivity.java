@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements I_CEventListener 
 
     String userId = "100002";
     String token = "token_" + userId;
-    String hosts = "[{\"host\":\"192.168.0.105\", \"port\":8855}]";
+    String hosts = "[{\"host\":\"192.168.0.102\", \"port\":8855}]";
 
     private static final String[] EVENTS = {
             Events.CHAT_SINGLE_MESSAGE
