@@ -21,7 +21,7 @@
 ## QQ交流群：1015178804，目前是Android IM技术交流群，后续写的文章，也会用此群进行交流。
 ## 目前准备写的文章如下：
 ```
-~~1.《开源一个自用的Android IM库，基于Netty+TCP+Protobuf实现》~~
+1.~~《开源一个自用的Android IM库，基于Netty+TCP+Protobuf实现》~~
 2.《开源一个自用的Android IM库，基于Netty+WebSocket+Protobuf实现》
 3.《开源一个自用的Android IM库，基于Netty+UDP+Protobuf实现》
 4.《开源一个自用的Android网络请求库，基于Rxjava+Retrofit实现》
