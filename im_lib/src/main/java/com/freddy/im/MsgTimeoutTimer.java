@@ -28,7 +28,7 @@ public class MsgTimeoutTimer extends Timer {
         this.imsClient = imsClient;
         this.msg = msg;
         task = new MsgTimeoutTask();
-        this.schedule(task, imsClient.getReconnectInterval(), imsClient.getReconnectInterval());
+        this.schedule(task, imsClient.getResendInterval(), imsClient.getResendInterval());
     }
 
     /**

@@ -10,7 +10,6 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/im_lib" />
-            <option value="$PROJECT_DIR$/mylibrary" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
