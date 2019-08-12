@@ -561,14 +561,26 @@ public class NettyTcpClient implements IMSClientInterface {
     private void closeChannel() {
         try {
             if (channel != null) {
-                channel.close();
-                channel.eventLoop().shutdownGracefully();
+                try {
+                    removeHandler(HeartbeatHandler.class.getSimpleName());
+                    removeHandler(TCPReadHandler.class.getSimpleName());
+                    removeHandler(IdleStateHandler.class.getSimpleName());
+                } finally {
+                    try {
+                        channel.close();
+                    } catch (Exception ex) {
+                    }
+                    try {
+                        channel.eventLoop().shutdownGracefully();
+                    } catch (Exception ex) {
+                    }
+
+                    channel = null;
+                }
             }
-        } catch (Exception e) {
-            e.printStackTrace();
-            System.err.println("关闭channel出错，reason:" + e.getMessage());
-        } finally {
-            channel = null;
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            System.out.println("关闭channel出错，reason:" + ex.getMessage());
         }
     }
 
