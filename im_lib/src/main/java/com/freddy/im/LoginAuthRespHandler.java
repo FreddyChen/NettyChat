@@ -68,7 +68,9 @@ public class LoginAuthRespHandler extends ChannelInboundHandlerAdapter {
                     // 添加心跳消息管理handler
                     imsClient.addHeartbeatHandler();
                 } else {
-                    imsClient.resetConnect(false);// 握手失败，触发重连
+                    //imsClient.resetConnect(false);// 握手失败，触发重连
+                    //握手失败且返回了消息一定是服务端认证没通过 所以这里需要关闭客户端
+                    imsClient.close();
                 }
             }
         } else {
